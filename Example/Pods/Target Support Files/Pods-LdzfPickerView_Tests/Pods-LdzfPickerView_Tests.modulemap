@@ -1,0 +1,6 @@
+framework module Pods_LdzfPickerView_Tests {
+  umbrella header "Pods-LdzfPickerView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}

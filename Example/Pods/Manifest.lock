@@ -1,0 +1,16 @@
+PODS:
+  - LDZFPickerView (0.1.0)
+
+DEPENDENCIES:
+  - LDZFPickerView (from `../`)
+
+EXTERNAL SOURCES:
+  LDZFPickerView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LDZFPickerView: 81a4c57fb6f596a0a9d38cd3aefb635ae5ac68ad
+
+PODFILE CHECKSUM: ab352c1cbbda443cb36b142a577760a1d7776048
+
+COCOAPODS: 1.11.2

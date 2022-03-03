@@ -1,0 +1,6 @@
+framework module Pods_LdzfPickerView_Example {
+  umbrella header "Pods-LdzfPickerView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

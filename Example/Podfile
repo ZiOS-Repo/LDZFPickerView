@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'LdzfPickerView_Example' do
+  pod 'LDZFPickerView', :path => '../'
+
+  target 'LdzfPickerView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

@@ -1,0 +1,810 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0067174331A88E2780D56E5E2D184C6E /* LdzfCustomPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1812AC6F6D89D4495076843AE8EC48B6 /* LdzfCustomPickerView.m */; };
+		014BD92B549B130D8172F4D87E0CCA60 /* LdzfPickerViewDataAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = C11016771C539E26D674A4118E561A10 /* LdzfPickerViewDataAdapter.m */; };
+		09AAD70AF7230ECA9414345D20636FF7 /* Pods-LdzfPickerView_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DF413758928D4A38B948A7E3E9E36075 /* Pods-LdzfPickerView_Example-dummy.m */; };
+		13E90EE78FD0418C980FAF0ED5932C5F /* Pods-LdzfPickerView_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E1EE70B81524B1E7300E13EB3D7467E3 /* Pods-LdzfPickerView_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1C42101471F479BB1D33342AC7F56721 /* LdzfPickerViewDataAdapter.h in Headers */ = {isa = PBXBuildFile; fileRef = 602BD7FBB5976CB632EBD6F6C1C4F3C3 /* LdzfPickerViewDataAdapter.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F864E38C081D1C1A2C0658ABD3335AA /* LdzfPickerViewComponent.h in Headers */ = {isa = PBXBuildFile; fileRef = F3EE477CCFD0A569B397A548B0F1F7A4 /* LdzfPickerViewComponent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2550151E9DB5B6FDFF06FB151AAA4252 /* LdzfPickerViewRowModel.h in Headers */ = {isa = PBXBuildFile; fileRef = D4B31DCF1ABF70E855593ABB28620321 /* LdzfPickerViewRowModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		43A0DD390B240698C08D0AA3A4FD74F0 /* LdzfPickerReusingView.h in Headers */ = {isa = PBXBuildFile; fileRef = 06798EE25833B4AB2AFDF4F4B76F1E39 /* LdzfPickerReusingView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4D09C521E7C7F69EC7A87106AB497877 /* Pods-LdzfPickerView_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 70B840BB5D0916B60BDBA06BA7B2B1A1 /* Pods-LdzfPickerView_Tests-dummy.m */; };
+		540AC24A7340E64D84AA6ACBA64E0C50 /* LdzfCustomPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = 6EEDFACBFA845B693C967177ECA030E8 /* LdzfCustomPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E5782AE2FDE13CF4951F40397594398 /* Pods-LdzfPickerView_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0C20C65EC8ECEF50371EFBDE55E65FCB /* Pods-LdzfPickerView_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6E7AA39AA5AE456CF9DEA1276BE282FF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		962445483367BAC806DB27945BAFD2DF /* LDZFPickerView.h in Headers */ = {isa = PBXBuildFile; fileRef = F5E7C1C0D0945ED5C16AD47DE4D05FF8 /* LDZFPickerView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A2D5120D59F7622BCFF460D2A4CBEBBC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+		C005DB948B3557156FD52925AA6D9420 /* LdzfPickerViewComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B9D9E386EC724B1B10860D1F91591AD /* LdzfPickerViewComponent.m */; };
+		C08707E8BBB8F99064400849DBB068E9 /* LDZFPickerView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5906A99B80D91F3ED8653E0F5058367 /* LDZFPickerView-dummy.m */; };
+		CD8E1C106ACE8798966EC70B2412CECD /* LDZFPickerView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7C12DC7440C2C39394BC71A81408C38 /* LDZFPickerView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F4B73C4A14E3B27E8D46FB6D6878955C /* LdzfPickerReusingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F5E6A9B953271D99CA889C1DDB0E1E8 /* LdzfPickerReusingView.m */; };
+		F59AB4FAC18E5A62AB4FD8A853EC3FBF /* LdzfPickerViewRowModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 621B1A5AAE0946AA827C0DFB8275BF0C /* LdzfPickerViewRowModel.m */; };
+		F838F12968FF86D774C42598EDAD2354 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		217EACDA05E96C37A16B527DBFA3A646 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6D94ED38E44671712BBB3EF87F6B06DB;
+			remoteInfo = "Pods-LdzfPickerView_Example";
+		};
+		CFDED6D561D05D2433D3822FF9818743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3B9196F8BB32E487D15A85BC1E26FA6;
+			remoteInfo = LDZFPickerView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00104CEE7636AA1066FC74E1AAAC8057 /* Pods-LdzfPickerView_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LdzfPickerView_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		06798EE25833B4AB2AFDF4F4B76F1E39 /* LdzfPickerReusingView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LdzfPickerReusingView.h; path = LDZFPickerView/Classes/LdzfPickerReusingView.h; sourceTree = "<group>"; };
+		0C20C65EC8ECEF50371EFBDE55E65FCB /* Pods-LdzfPickerView_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LdzfPickerView_Tests-umbrella.h"; sourceTree = "<group>"; };
+		0F5E6A9B953271D99CA889C1DDB0E1E8 /* LdzfPickerReusingView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LdzfPickerReusingView.m; path = LDZFPickerView/Classes/LdzfPickerReusingView.m; sourceTree = "<group>"; };
+		13DCACE3C087EC47E924C272656ECD6E /* LDZFPickerView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = LDZFPickerView.modulemap; sourceTree = "<group>"; };
+		1812AC6F6D89D4495076843AE8EC48B6 /* LdzfCustomPickerView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LdzfCustomPickerView.m; path = LDZFPickerView/Classes/LdzfCustomPickerView.m; sourceTree = "<group>"; };
+		19C5EB87EC03CDDF369F58E53A2C4F9C /* Pods-LdzfPickerView_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LdzfPickerView_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		200F83E09D433916E43CC9DE3EFBD5EB /* Pods-LdzfPickerView_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LdzfPickerView_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		252086B3E8FF2AE4AA2CE142961B2CC3 /* Pods-LdzfPickerView_Tests */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LdzfPickerView_Tests"; path = Pods_LdzfPickerView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2986A90DCD007B27805557BD426F69FB /* Pods-LdzfPickerView_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LdzfPickerView_Tests-Info.plist"; sourceTree = "<group>"; };
+		29E30DAD02079FA1AE1B23891B900DBA /* Pods-LdzfPickerView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LdzfPickerView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		2B9D9E386EC724B1B10860D1F91591AD /* LdzfPickerViewComponent.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LdzfPickerViewComponent.m; path = LDZFPickerView/Classes/LdzfPickerViewComponent.m; sourceTree = "<group>"; };
+		2D7AF0847076847BD6B49DE2D95B6BC4 /* Pods-LdzfPickerView_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-LdzfPickerView_Example-Info.plist"; sourceTree = "<group>"; };
+		3935CEF5F5132404BD25D256984AD3DB /* Pods-LdzfPickerView_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-LdzfPickerView_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		39918A9EA379ED862F31B458DA93DFEA /* LDZFPickerView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LDZFPickerView-prefix.pch"; sourceTree = "<group>"; };
+		3BF859C5A922AEBC6A7E3E87A2CFC4B4 /* Pods-LdzfPickerView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LdzfPickerView_Example.release.xcconfig"; sourceTree = "<group>"; };
+		4F25FCCA6340ED1BE98055DDAF6D65CF /* LDZFPickerView.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = LDZFPickerView.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		602BD7FBB5976CB632EBD6F6C1C4F3C3 /* LdzfPickerViewDataAdapter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LdzfPickerViewDataAdapter.h; path = LDZFPickerView/Classes/LdzfPickerViewDataAdapter.h; sourceTree = "<group>"; };
+		621B1A5AAE0946AA827C0DFB8275BF0C /* LdzfPickerViewRowModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LdzfPickerViewRowModel.m; path = LDZFPickerView/Classes/LdzfPickerViewRowModel.m; sourceTree = "<group>"; };
+		67F1899CC485F3AE4FC070128A291808 /* Pods-LdzfPickerView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LdzfPickerView_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		6EEDFACBFA845B693C967177ECA030E8 /* LdzfCustomPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LdzfCustomPickerView.h; path = LDZFPickerView/Classes/LdzfCustomPickerView.h; sourceTree = "<group>"; };
+		70B840BB5D0916B60BDBA06BA7B2B1A1 /* Pods-LdzfPickerView_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LdzfPickerView_Tests-dummy.m"; sourceTree = "<group>"; };
+		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7FE54197B394C0229B597D3276CCAEAC /* Pods-LdzfPickerView_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-LdzfPickerView_Example"; path = Pods_LdzfPickerView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A7E3F34587238743EA5781DA307F5599 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		AD3F1BB414B0B394369B72D4713A4A12 /* LDZFPickerView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = LDZFPickerView; path = LDZFPickerView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B349FC18C0792BB8E89D0392694AC3B1 /* Pods-LdzfPickerView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-LdzfPickerView_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		B5906A99B80D91F3ED8653E0F5058367 /* LDZFPickerView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "LDZFPickerView-dummy.m"; sourceTree = "<group>"; };
+		B5D41DC2DEFB8582978BC370E817BBEE /* Pods-LdzfPickerView_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-LdzfPickerView_Example-frameworks.sh"; sourceTree = "<group>"; };
+		BCAA86A9C8B3DBCC49D619D4D4D0F607 /* LDZFPickerView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LDZFPickerView.debug.xcconfig; sourceTree = "<group>"; };
+		C11016771C539E26D674A4118E561A10 /* LdzfPickerViewDataAdapter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = LdzfPickerViewDataAdapter.m; path = LDZFPickerView/Classes/LdzfPickerViewDataAdapter.m; sourceTree = "<group>"; };
+		CDFCD922F760C4E26F53E41407B488A9 /* LDZFPickerView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = LDZFPickerView.release.xcconfig; sourceTree = "<group>"; };
+		D4B31DCF1ABF70E855593ABB28620321 /* LdzfPickerViewRowModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LdzfPickerViewRowModel.h; path = LDZFPickerView/Classes/LdzfPickerViewRowModel.h; sourceTree = "<group>"; };
+		DF413758928D4A38B948A7E3E9E36075 /* Pods-LdzfPickerView_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-LdzfPickerView_Example-dummy.m"; sourceTree = "<group>"; };
+		DF474913A51DD96D15C351B35BD7B4DC /* Pods-LdzfPickerView_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LdzfPickerView_Example.modulemap"; sourceTree = "<group>"; };
+		E1EE70B81524B1E7300E13EB3D7467E3 /* Pods-LdzfPickerView_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-LdzfPickerView_Example-umbrella.h"; sourceTree = "<group>"; };
+		E26A2C9E1FBBC5D2D0F9DB7B15AF5ED8 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E2BF37D159742FE010E005B4D6F77396 /* LDZFPickerView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "LDZFPickerView-Info.plist"; sourceTree = "<group>"; };
+		E88C5BFB07DFA06C3BFD63B9CAC2E667 /* Pods-LdzfPickerView_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-LdzfPickerView_Tests.modulemap"; sourceTree = "<group>"; };
+		F3EE477CCFD0A569B397A548B0F1F7A4 /* LdzfPickerViewComponent.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LdzfPickerViewComponent.h; path = LDZFPickerView/Classes/LdzfPickerViewComponent.h; sourceTree = "<group>"; };
+		F5E7C1C0D0945ED5C16AD47DE4D05FF8 /* LDZFPickerView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = LDZFPickerView.h; path = LDZFPickerView/Classes/LDZFPickerView.h; sourceTree = "<group>"; };
+		F7C12DC7440C2C39394BC71A81408C38 /* LDZFPickerView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "LDZFPickerView-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1AF88F20F40ED9729765F0728431784F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E7AA39AA5AE456CF9DEA1276BE282FF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		82CAA0AE38DCEE7112B983D90ECEE333 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2D5120D59F7622BCFF460D2A4CBEBBC /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D2A93040EF1AD40933616D0CEB6D3718 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F838F12968FF86D774C42598EDAD2354 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08F3C20F99E94580FA2BA8A1937B4654 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				4F25FCCA6340ED1BE98055DDAF6D65CF /* LDZFPickerView.podspec */,
+				A7E3F34587238743EA5781DA307F5599 /* LICENSE */,
+				E26A2C9E1FBBC5D2D0F9DB7B15AF5ED8 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		1AB1ECDCEB7E940F7CD77386A10A8684 /* Pods-LdzfPickerView_Example */ = {
+			isa = PBXGroup;
+			children = (
+				DF474913A51DD96D15C351B35BD7B4DC /* Pods-LdzfPickerView_Example.modulemap */,
+				00104CEE7636AA1066FC74E1AAAC8057 /* Pods-LdzfPickerView_Example-acknowledgements.markdown */,
+				200F83E09D433916E43CC9DE3EFBD5EB /* Pods-LdzfPickerView_Example-acknowledgements.plist */,
+				DF413758928D4A38B948A7E3E9E36075 /* Pods-LdzfPickerView_Example-dummy.m */,
+				B5D41DC2DEFB8582978BC370E817BBEE /* Pods-LdzfPickerView_Example-frameworks.sh */,
+				2D7AF0847076847BD6B49DE2D95B6BC4 /* Pods-LdzfPickerView_Example-Info.plist */,
+				E1EE70B81524B1E7300E13EB3D7467E3 /* Pods-LdzfPickerView_Example-umbrella.h */,
+				67F1899CC485F3AE4FC070128A291808 /* Pods-LdzfPickerView_Example.debug.xcconfig */,
+				3BF859C5A922AEBC6A7E3E87A2CFC4B4 /* Pods-LdzfPickerView_Example.release.xcconfig */,
+			);
+			name = "Pods-LdzfPickerView_Example";
+			path = "Target Support Files/Pods-LdzfPickerView_Example";
+			sourceTree = "<group>";
+		};
+		555FCFF765D7923A8E106373EA5233FC /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				13DCACE3C087EC47E924C272656ECD6E /* LDZFPickerView.modulemap */,
+				B5906A99B80D91F3ED8653E0F5058367 /* LDZFPickerView-dummy.m */,
+				E2BF37D159742FE010E005B4D6F77396 /* LDZFPickerView-Info.plist */,
+				39918A9EA379ED862F31B458DA93DFEA /* LDZFPickerView-prefix.pch */,
+				F7C12DC7440C2C39394BC71A81408C38 /* LDZFPickerView-umbrella.h */,
+				BCAA86A9C8B3DBCC49D619D4D4D0F607 /* LDZFPickerView.debug.xcconfig */,
+				CDFCD922F760C4E26F53E41407B488A9 /* LDZFPickerView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/LDZFPickerView";
+			sourceTree = "<group>";
+		};
+		578452D2E740E91742655AC8F1636D1F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		98D6DAC4B6E541C785D451EEA8A65F1B /* Pods-LdzfPickerView_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E88C5BFB07DFA06C3BFD63B9CAC2E667 /* Pods-LdzfPickerView_Tests.modulemap */,
+				3935CEF5F5132404BD25D256984AD3DB /* Pods-LdzfPickerView_Tests-acknowledgements.markdown */,
+				19C5EB87EC03CDDF369F58E53A2C4F9C /* Pods-LdzfPickerView_Tests-acknowledgements.plist */,
+				70B840BB5D0916B60BDBA06BA7B2B1A1 /* Pods-LdzfPickerView_Tests-dummy.m */,
+				2986A90DCD007B27805557BD426F69FB /* Pods-LdzfPickerView_Tests-Info.plist */,
+				0C20C65EC8ECEF50371EFBDE55E65FCB /* Pods-LdzfPickerView_Tests-umbrella.h */,
+				29E30DAD02079FA1AE1B23891B900DBA /* Pods-LdzfPickerView_Tests.debug.xcconfig */,
+				B349FC18C0792BB8E89D0392694AC3B1 /* Pods-LdzfPickerView_Tests.release.xcconfig */,
+			);
+			name = "Pods-LdzfPickerView_Tests";
+			path = "Target Support Files/Pods-LdzfPickerView_Tests";
+			sourceTree = "<group>";
+		};
+		C168C0B3E8750A2574FF810687105753 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1AB1ECDCEB7E940F7CD77386A10A8684 /* Pods-LdzfPickerView_Example */,
+				98D6DAC4B6E541C785D451EEA8A65F1B /* Pods-LdzfPickerView_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				F14417884B514A112496B5C66ABAEC6E /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				DC4AF578BEB1DCAE648ED7188CD503AB /* Products */,
+				C168C0B3E8750A2574FF810687105753 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				578452D2E740E91742655AC8F1636D1F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC4AF578BEB1DCAE648ED7188CD503AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD3F1BB414B0B394369B72D4713A4A12 /* LDZFPickerView */,
+				7FE54197B394C0229B597D3276CCAEAC /* Pods-LdzfPickerView_Example */,
+				252086B3E8FF2AE4AA2CE142961B2CC3 /* Pods-LdzfPickerView_Tests */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EED5B4C1515798B81B5C1A28477D45B5 /* LDZFPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				6EEDFACBFA845B693C967177ECA030E8 /* LdzfCustomPickerView.h */,
+				1812AC6F6D89D4495076843AE8EC48B6 /* LdzfCustomPickerView.m */,
+				06798EE25833B4AB2AFDF4F4B76F1E39 /* LdzfPickerReusingView.h */,
+				0F5E6A9B953271D99CA889C1DDB0E1E8 /* LdzfPickerReusingView.m */,
+				F5E7C1C0D0945ED5C16AD47DE4D05FF8 /* LDZFPickerView.h */,
+				F3EE477CCFD0A569B397A548B0F1F7A4 /* LdzfPickerViewComponent.h */,
+				2B9D9E386EC724B1B10860D1F91591AD /* LdzfPickerViewComponent.m */,
+				602BD7FBB5976CB632EBD6F6C1C4F3C3 /* LdzfPickerViewDataAdapter.h */,
+				C11016771C539E26D674A4118E561A10 /* LdzfPickerViewDataAdapter.m */,
+				D4B31DCF1ABF70E855593ABB28620321 /* LdzfPickerViewRowModel.h */,
+				621B1A5AAE0946AA827C0DFB8275BF0C /* LdzfPickerViewRowModel.m */,
+				08F3C20F99E94580FA2BA8A1937B4654 /* Pod */,
+				555FCFF765D7923A8E106373EA5233FC /* Support Files */,
+			);
+			name = LDZFPickerView;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F14417884B514A112496B5C66ABAEC6E /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EED5B4C1515798B81B5C1A28477D45B5 /* LDZFPickerView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		36242A736385DAD43450575FE03A56B1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E5782AE2FDE13CF4951F40397594398 /* Pods-LdzfPickerView_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7E6AFDF3398E6AC70DC6B80C7904071E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				540AC24A7340E64D84AA6ACBA64E0C50 /* LdzfCustomPickerView.h in Headers */,
+				43A0DD390B240698C08D0AA3A4FD74F0 /* LdzfPickerReusingView.h in Headers */,
+				962445483367BAC806DB27945BAFD2DF /* LDZFPickerView.h in Headers */,
+				CD8E1C106ACE8798966EC70B2412CECD /* LDZFPickerView-umbrella.h in Headers */,
+				1F864E38C081D1C1A2C0658ABD3335AA /* LdzfPickerViewComponent.h in Headers */,
+				1C42101471F479BB1D33342AC7F56721 /* LdzfPickerViewDataAdapter.h in Headers */,
+				2550151E9DB5B6FDFF06FB151AAA4252 /* LdzfPickerViewRowModel.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B2BAC1407A590ED4894DB8B17812A2CD /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13E90EE78FD0418C980FAF0ED5932C5F /* Pods-LdzfPickerView_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		0E501DF82D6269896AA8E9A301EC5A2A /* Pods-LdzfPickerView_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFCF292746528E0A62F8277AB532EE05 /* Build configuration list for PBXNativeTarget "Pods-LdzfPickerView_Tests" */;
+			buildPhases = (
+				36242A736385DAD43450575FE03A56B1 /* Headers */,
+				DF8165915C85C87DBA7ABAB02E8358F8 /* Sources */,
+				1AF88F20F40ED9729765F0728431784F /* Frameworks */,
+				4E66788ACD030250612B3649406335BF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6518EB7E65B095AEFEDBA9C9A608BDA1 /* PBXTargetDependency */,
+			);
+			name = "Pods-LdzfPickerView_Tests";
+			productName = Pods_LdzfPickerView_Tests;
+			productReference = 252086B3E8FF2AE4AA2CE142961B2CC3 /* Pods-LdzfPickerView_Tests */;
+			productType = "com.apple.product-type.framework";
+		};
+		6D94ED38E44671712BBB3EF87F6B06DB /* Pods-LdzfPickerView_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FCC998B18FF4C154361FF7C11305AA17 /* Build configuration list for PBXNativeTarget "Pods-LdzfPickerView_Example" */;
+			buildPhases = (
+				B2BAC1407A590ED4894DB8B17812A2CD /* Headers */,
+				E284BF76368A4803057133607E4B8426 /* Sources */,
+				D2A93040EF1AD40933616D0CEB6D3718 /* Frameworks */,
+				0279B4B27BA3CD8E00DCF9F3D27E9223 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1708D155826C71D8A711C82864E77F3C /* PBXTargetDependency */,
+			);
+			name = "Pods-LdzfPickerView_Example";
+			productName = Pods_LdzfPickerView_Example;
+			productReference = 7FE54197B394C0229B597D3276CCAEAC /* Pods-LdzfPickerView_Example */;
+			productType = "com.apple.product-type.framework";
+		};
+		D3B9196F8BB32E487D15A85BC1E26FA6 /* LDZFPickerView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5E00D0F75E007A0CD00500D1B9426EED /* Build configuration list for PBXNativeTarget "LDZFPickerView" */;
+			buildPhases = (
+				7E6AFDF3398E6AC70DC6B80C7904071E /* Headers */,
+				CF05C8FE8BA27B32CF25BF133AFC7DB8 /* Sources */,
+				82CAA0AE38DCEE7112B983D90ECEE333 /* Frameworks */,
+				CCBB1495BC4FFA361E3A267581ACEC78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LDZFPickerView;
+			productName = LDZFPickerView;
+			productReference = AD3F1BB414B0B394369B72D4713A4A12 /* LDZFPickerView */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = DC4AF578BEB1DCAE648ED7188CD503AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D3B9196F8BB32E487D15A85BC1E26FA6 /* LDZFPickerView */,
+				6D94ED38E44671712BBB3EF87F6B06DB /* Pods-LdzfPickerView_Example */,
+				0E501DF82D6269896AA8E9A301EC5A2A /* Pods-LdzfPickerView_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0279B4B27BA3CD8E00DCF9F3D27E9223 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E66788ACD030250612B3649406335BF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCBB1495BC4FFA361E3A267581ACEC78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF05C8FE8BA27B32CF25BF133AFC7DB8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0067174331A88E2780D56E5E2D184C6E /* LdzfCustomPickerView.m in Sources */,
+				F4B73C4A14E3B27E8D46FB6D6878955C /* LdzfPickerReusingView.m in Sources */,
+				C08707E8BBB8F99064400849DBB068E9 /* LDZFPickerView-dummy.m in Sources */,
+				C005DB948B3557156FD52925AA6D9420 /* LdzfPickerViewComponent.m in Sources */,
+				014BD92B549B130D8172F4D87E0CCA60 /* LdzfPickerViewDataAdapter.m in Sources */,
+				F59AB4FAC18E5A62AB4FD8A853EC3FBF /* LdzfPickerViewRowModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF8165915C85C87DBA7ABAB02E8358F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D09C521E7C7F69EC7A87106AB497877 /* Pods-LdzfPickerView_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E284BF76368A4803057133607E4B8426 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09AAD70AF7230ECA9414345D20636FF7 /* Pods-LdzfPickerView_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1708D155826C71D8A711C82864E77F3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = LDZFPickerView;
+			target = D3B9196F8BB32E487D15A85BC1E26FA6 /* LDZFPickerView */;
+			targetProxy = CFDED6D561D05D2433D3822FF9818743 /* PBXContainerItemProxy */;
+		};
+		6518EB7E65B095AEFEDBA9C9A608BDA1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-LdzfPickerView_Example";
+			target = 6D94ED38E44671712BBB3EF87F6B06DB /* Pods-LdzfPickerView_Example */;
+			targetProxy = 217EACDA05E96C37A16B527DBFA3A646 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		22844661E0C00C8191D5ACDA02AEA619 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCAA86A9C8B3DBCC49D619D4D4D0F607 /* LDZFPickerView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LDZFPickerView/LDZFPickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LDZFPickerView/LDZFPickerView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LDZFPickerView/LDZFPickerView.modulemap";
+				PRODUCT_MODULE_NAME = LDZFPickerView;
+				PRODUCT_NAME = LDZFPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		415869B68309225A86DB11BE3327F4EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BF859C5A922AEBC6A7E3E87A2CFC4B4 /* Pods-LdzfPickerView_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LdzfPickerView_Example/Pods-LdzfPickerView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LdzfPickerView_Example/Pods-LdzfPickerView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		58DD5F38FB8808A66A312639D40E1300 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29E30DAD02079FA1AE1B23891B900DBA /* Pods-LdzfPickerView_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LdzfPickerView_Tests/Pods-LdzfPickerView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LdzfPickerView_Tests/Pods-LdzfPickerView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9FC5F531C1604751D3993B905293CB37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B349FC18C0792BB8E89D0392694AC3B1 /* Pods-LdzfPickerView_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LdzfPickerView_Tests/Pods-LdzfPickerView_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LdzfPickerView_Tests/Pods-LdzfPickerView_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		D7F1413B0914EA0836152BE5B3239600 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 67F1899CC485F3AE4FC070128A291808 /* Pods-LdzfPickerView_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-LdzfPickerView_Example/Pods-LdzfPickerView_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-LdzfPickerView_Example/Pods-LdzfPickerView_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EB19D20EEFFD5757FDEF4218BA0574EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDFCD922F760C4E26F53E41407B488A9 /* LDZFPickerView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/LDZFPickerView/LDZFPickerView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/LDZFPickerView/LDZFPickerView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/LDZFPickerView/LDZFPickerView.modulemap";
+				PRODUCT_MODULE_NAME = LDZFPickerView;
+				PRODUCT_NAME = LDZFPickerView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25AD9454612BF454A1E3DC4CD4FA8C6D /* Debug */,
+				CA547D2C7E9A8A153DC2B27FBE00B112 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5E00D0F75E007A0CD00500D1B9426EED /* Build configuration list for PBXNativeTarget "LDZFPickerView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22844661E0C00C8191D5ACDA02AEA619 /* Debug */,
+				EB19D20EEFFD5757FDEF4218BA0574EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFCF292746528E0A62F8277AB532EE05 /* Build configuration list for PBXNativeTarget "Pods-LdzfPickerView_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58DD5F38FB8808A66A312639D40E1300 /* Debug */,
+				9FC5F531C1604751D3993B905293CB37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FCC998B18FF4C154361FF7C11305AA17 /* Build configuration list for PBXNativeTarget "Pods-LdzfPickerView_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7F1413B0914EA0836152BE5B3239600 /* Debug */,
+				415869B68309225A86DB11BE3327F4EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}
